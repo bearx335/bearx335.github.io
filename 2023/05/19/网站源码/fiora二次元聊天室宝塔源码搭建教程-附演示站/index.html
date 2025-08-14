@@ -1,0 +1,765 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/fluid.png">
+  <link rel="icon" href="/images/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="小熊熊">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="📌 资源介绍搭建有啥问题可以进演示站问安装教程：1.宝塔安装环境【未测试源码，仅供参考学习】①一键安装apache网站搭建环境 ②在 软件商店 安装好PM2管理器、MongoDB、Redis，三个应用 ③在服务器防火墙放行9200和mong数据库默认27017端口2.建议手动下载源码放入根目录&#x2F;opt文件夹，wwwroot根目录新建opt文件夹，然后在opt里边上传源码，解压，解压后的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="fiora二次元聊天室宝塔源码+搭建教程 附演示站">
+<meta property="og:url" content="http://bearxwu.sbs/2023/05/19/%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81/fiora%E4%BA%8C%E6%AC%A1%E5%85%83%E8%81%8A%E5%A4%A9%E5%AE%A4%E5%AE%9D%E5%A1%94%E6%BA%90%E7%A0%81%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B-%E9%99%84%E6%BC%94%E7%A4%BA%E7%AB%99/index.html">
+<meta property="og:site_name" content="熊小屋">
+<meta property="og:description" content="📌 资源介绍搭建有啥问题可以进演示站问安装教程：1.宝塔安装环境【未测试源码，仅供参考学习】①一键安装apache网站搭建环境 ②在 软件商店 安装好PM2管理器、MongoDB、Redis，三个应用 ③在服务器防火墙放行9200和mong数据库默认27017端口2.建议手动下载源码放入根目录&#x2F;opt文件夹，wwwroot根目录新建opt文件夹，然后在opt里边上传源码，解压，解压后的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2023/05/2023051901271848.jpg">
+<meta property="article:published_time" content="2023-05-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-14T12:32:36.867Z">
+<meta property="article:author" content="小熊熊">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2023/05/2023051901271848.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>fiora二次元聊天室宝塔源码+搭建教程 附演示站 - 熊小屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"bearxwu.sbs","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"复制"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""],"images_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2,"loading_images":"/images/loading.gif"},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"5a7b1cfef26dd75ee0079afe2ddb9465","google":{"measurement_id":"G-GV73HGP3LE"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5a7b1cfef26dd75ee0079afe2ddb9465";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-GV73HGP3LE", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-GV73HGP3LE');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>熊小屋 bearxwu</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="fiora二次元聊天室宝塔源码+搭建教程 附演示站"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-05-19 00:00" pubdate>
+          2023年5月19日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          997 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">fiora二次元聊天室宝塔源码+搭建教程 附演示站</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="📌-资源介绍"><a href="#📌-资源介绍" class="headerlink" title="📌 资源介绍"></a>📌 资源介绍</h2><p>搭建有啥问题可以进演示站问<br>安装教程：<br>1.宝塔安装环境【未测试源码，仅供参考学习】<br>①一键安装apache网站搭建环境 ②在 软件商店 安装好PM2管理器、MongoDB、Redis，三个应用 ③在服务器防火墙放行9200和mong数据库默认27017端口<br>2.建议手动下载源码放入根目录&#x2F;opt文件夹，wwwroot根目录新建opt文件夹，然后在opt里边上传源码，解压，解压后的文件名改为fiora就可以!<br>3.连接fiora文件夹ssh输入命令(终端)<br>输入命令进入fiora文件夹<br>cd &#x2F;opt&#x2F;fiora<br>用yarn安装依赖<br>npm i -g yarn yarn<br>构建和转移产物<br>npm run build:client<br>npm run move-dist<br>启动fiora，都完成后需要pm2启动后面会说<br>npm start<br>4.创建一个新用户<br>打开 http:&#x2F;&#x2F;你服务器ip:9200 注册第一个用户: admin(可随意)<br>5.接下来配置管理员和开机自启 ，先使用Ctrl+C断开ssh运行。<br>重新连接ssh执行以下命令<br>先给node做个软连接，不然后面会启动失败<br>ln -sf $(which node) &#x2F;usr&#x2F;bin&#x2F;node<br>获取用户userid 比如admin<br>yarn script getUserId admin<br>设置管理员,这里可能无效，不过可以看下边其他方法<br>export Administrator&#x3D;获取的userid<br>Port&#x3D;9200<br>以下命令一起复制进SSH客户端运行<br>cat &gt; &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;fiora.service<br>6.设置开机启动，就是我要说的pm2启动<br>使用 npm start 运行服务端会在断开 ssh 连接后停止运行, 所以要使用 pm2 来运行<br>pm2 start yarn –name fiora — start<br>7.到此重启服务器使管理员生效!如果没生效看下边其他方法<br>重启后需要在fiora文件夹终端重新使用pm2启动!<br>8.设置域名反向代理，就是通过域名访问你的聊天室<br>开启ssl请先关闭反代 宝塔面板里面，先点击左侧网站，添加站点，然后再点击添加好了的域名 网址 – 域名 – 设置- 反向代理 – 增加反向代理 目标URL http:&#x2F;&#x2F;你服务器ip:9200<br>设置完成ssl后重新开启反代<br>9.到此安装就完成了，修改文件，fiora页面修改路径<br>以下logo：<br>&#x2F;opt&#x2F;fiora&#x2F;public&#x2F;favicon-96.png<br>&#x2F;opt&#x2F;fiora&#x2F;public&#x2F;favicon-192.png<br>&#x2F;opt&#x2F;fiora&#x2F;public&#x2F;favicon-512.png<br>以下主页修改路径<br>&#x2F;opt&#x2F;fiora&#x2F;client&#x2F;templates&#x2F;index.html<br>以下侧边栏修改路径<br>&#x2F;opt&#x2F;fiora&#x2F;client&#x2F;modules&#x2F;Sidebar&#x2F;<br>页面修改问题<br>修改fiora内容,往往需要重构才能生效。<br>依然打开fiora终端ssh<br>关闭fiora<br>pm2 stop fiora<br>构建和转移产物<br>npm run build:client<br>npm run move-dist<br>pm2启动<br>pm2 start yarn –name fiora — start<br>重构启动报错问题解决方案<br>连接ssh或直接cd<br>输入命令sudo kill -9 $(lsof -i:9200 -t)<br>回到fiora文件夹，输入cd &#x2F;opt&#x2F;fiora<br>启动fiora，输入以下命令后续需要pm2，自己启动 npm start<br>注册用户系统错误问题<br>Redis缓存导致，清除即可！一次不行就两次！<br>连接ssh宝塔终端<br>输入命令进入<br>Redis<br>redis-cli<br>执行命令<br>flushall<br>添加管理员权限，上边那个没效果的采取这个<br>在fiora根目录，新建 .env文件，里边内容输入如下，一行一个<br>Administrator&#x3D;你的userid<br>Port&#x3D;9200</p>
+<h2 id="🖼️-资源截图"><a href="#🖼️-资源截图" class="headerlink" title="🖼️ 资源截图"></a>🖼️ 资源截图</h2><div style="text-align: center; margin-bottom: 15px;"><img src="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2023/05/2023051901271848.jpg" srcset="/img/loading.gif" lazyload alt="fiora二次元聊天室宝塔源码+搭建教程 附演示站" title="fiora二次元聊天室宝塔源码+搭建教程 附演示站" onerror="this.src='/images/loading.jpg'" style="max-width: 80%; height: auto;"></div>
+
+<h2 id="📥-下载地址"><a href="#📥-下载地址" class="headerlink" title="📥 下载地址"></a>📥 下载地址</h2><div class="download-card">
+  <a href="https://77code.lanzoul.com/ia2Al0wk1hvc" target="_blank" rel="noopener noreferrer" class="download-button">
+    📥 立即下载
+  </a>
+  <div class="download-info">
+    <p><strong>文件大小:</strong> 未知</p>
+    <p><strong>版本:</strong> 正式版</p>
+    <p><strong>提取码:</strong> 无</p>
+  </div>
+</div>
+
+<style>
+.download-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+.download-button:hover {
+  background-color: #303f9f;
+}
+.download-info {
+  text-align: center;
+}
+.download-info p {
+  margin: 5px 0;
+  color: #555;
+}
+</style>
+
+<h2 id="💡-提示"><a href="#💡-提示" class="headerlink" title="💡 提示"></a>💡 提示</h2><ul>
+<li>这是网站源码，需要自行部署。</li>
+<li>建议有一定技术基础的用户使用，确保您熟悉网站部署流程。</li>
+<li>请确保您的服务器满足源码的系统要求。</li>
+<li>如需更多资源，请访问原始网站。</li>
+<li>截图仅供参考，实际效果可能有所不同。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81/" class="category-chain-item">网站源码</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>fiora二次元聊天室宝塔源码+搭建教程 附演示站</div>
+      <div>http://bearxwu.sbs/2023/05/19/网站源码/fiora二次元聊天室宝塔源码搭建教程-附演示站/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>小熊熊</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年5月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/05/19/%E6%B8%B8%E6%88%8F%E6%BA%90%E7%A0%81/%E3%80%8A%E4%BA%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E7%94%9F%E5%8C%96%E5%8D%B1%E6%9C%BA%E9%87%8D%E5%88%B6%E7%89%88%E5%A5%B3%E7%9A%87%E8%B1%AA%E5%8D%8E%E7%89%88%E5%88%86%E6%B5%81+%E5%A5%B3%E7%9A%87%E5%AD%A6%E4%B9%A0%E8%A1%A5%E4%B8%81+%E4%BF%AE%E6%94%B9%E5%99%A8%20%E8%A7%A3%E5%8E%8B%E5%8D%B3%E7%8E%A9%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E3%80%8B4/" title="《云盘下载生化危机重制版女皇豪华版分流+女皇学习补丁+修改器 解压即玩阿里云盘》4">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">《云盘下载生化危机重制版女皇豪华版分流+女皇学习补丁+修改器 解压即玩阿里云盘》4</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/05/19/%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81/%E6%BA%90%E6%94%AF%E4%BB%98V6%E7%A0%B4%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%8C%85%E5%90%ABV6%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/" title="源支付V6破解方式（包含V6所有版本）">
+                        <span class="hidden-mobile">源支付V6破解方式（包含V6所有版本）</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="#" target="_blank" rel="nofollow noopener"><span>Bearxwu</span></a> <i class="iconfont icon-love"></i> <a href="#" target="_blank" rel="nofollow noopener"><span>小熊熊</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
