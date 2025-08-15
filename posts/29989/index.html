@@ -1,0 +1,800 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/fluid.png">
+  <link rel="icon" href="/images/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="小熊熊">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="📌 资源介绍KaiGe的导航网一个现代化、简约而炫酷的网站导航页面，采用深色主题配紫色特效系统，为用户提供快速访问常用网站的便捷入口。 ✨ 特性🎨 视觉设计– 深色主题：舒适的深色背景，减少眼部疲劳– 紫色特效系统：统一的紫色配色方案，视觉效果优雅– 毛玻璃效果：现代化的半透明卡片设计– 响应式布局：完美适配桌面、平板、手机设备 🚀 动画特效– 漂浮粒子背景：动态粒子增强视觉层次– 扫光特效">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KaiGe网站导航网源码">
+<meta property="og:url" content="http://bearxwu.sbs/posts/29989/index.html">
+<meta property="og:site_name" content="熊小屋">
+<meta property="og:description" content="📌 资源介绍KaiGe的导航网一个现代化、简约而炫酷的网站导航页面，采用深色主题配紫色特效系统，为用户提供快速访问常用网站的便捷入口。 ✨ 特性🎨 视觉设计– 深色主题：舒适的深色背景，减少眼部疲劳– 紫色特效系统：统一的紫色配色方案，视觉效果优雅– 毛玻璃效果：现代化的半透明卡片设计– 响应式布局：完美适配桌面、平板、手机设备 🚀 动画特效– 漂浮粒子背景：动态粒子增强视觉层次– 扫光特效">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2025/06/202506251349383.jpg">
+<meta property="article:published_time" content="2025-06-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-14T12:32:37.162Z">
+<meta property="article:author" content="小熊熊">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2025/06/202506251349383.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>KaiGe网站导航网源码 - 熊小屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"bearxwu.sbs","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"复制"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""],"images_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2,"loading_images":"/images/loading.gif"},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"5a7b1cfef26dd75ee0079afe2ddb9465","google":{"measurement_id":"G-GV73HGP3LE"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5a7b1cfef26dd75ee0079afe2ddb9465";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-GV73HGP3LE", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-GV73HGP3LE');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>熊小屋 bearxwu</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="KaiGe网站导航网源码"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-06-25 00:00" pubdate>
+          2025年6月25日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">KaiGe网站导航网源码</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="📌-资源介绍"><a href="#📌-资源介绍" class="headerlink" title="📌 资源介绍"></a>📌 资源介绍</h2><p>KaiGe的导航网<br>一个现代化、简约而炫酷的网站导航页面，采用深色主题配紫色特效系统，为用户提供快速访问常用网站的便捷入口。</p>
+<h2 id="✨-特性"><a href="#✨-特性" class="headerlink" title="✨ 特性"></a>✨ 特性</h2><h3 id="🎨-视觉设计"><a href="#🎨-视觉设计" class="headerlink" title="🎨 视觉设计"></a>🎨 视觉设计</h3><p>– <strong>深色主题</strong>：舒适的深色背景，减少眼部疲劳<br>– <strong>紫色特效系统</strong>：统一的紫色配色方案，视觉效果优雅<br>– <strong>毛玻璃效果</strong>：现代化的半透明卡片设计<br>– <strong>响应式布局</strong>：完美适配桌面、平板、手机设备</p>
+<h3 id="🚀-动画特效"><a href="#🚀-动画特效" class="headerlink" title="🚀 动画特效"></a>🚀 动画特效</h3><p>– <strong>漂浮粒子背景</strong>：动态粒子增强视觉层次<br>– <strong>扫光特效</strong>：链接悬停时的扫光动画<br>– <strong>波纹效果</strong>：点击时的波纹扩散动画<br>– <strong>图标旋转</strong>：悬停时图标的旋转和发光效果<br>– <strong>渐入动画</strong>：页面加载时的优雅渐入效果</p>
+<h3 id="🛠️-功能特性"><a href="#🛠️-功能特性" class="headerlink" title="🛠️ 功能特性"></a>🛠️ 功能特性</h3><p>– <strong>自动图标获取</strong>：使用Google Favicon服务自动获取网站真实图标<br>– <strong>分类管理</strong>：清晰的网站分类组织<br>– <strong>广告推广区域</strong>：支持服务推荐和社群推广<br>– <strong>深色模式支持</strong>：自动适应系统深色模式偏好<br>– <strong>减少动画支持</strong>：遵循用户的动画偏好设置</p>
+<h2 id="📁-项目结构"><a href="#📁-项目结构" class="headerlink" title="📁 项目结构"></a>📁 项目结构</h2><p>“<code> 导航站源码/ ├── index.html          # 主页面文件 ├── style.css           # 样式文件 ├── script.js           # JavaScript交互文件 └── README.md          # 项目说明文档 “</code></p>
+<h3 id="2-本地运行"><a href="#2-本地运行" class="headerlink" title="2. 本地运行"></a>2. 本地运行</h3><p>直接用浏览器打开 <code>index.html</code> 即可，或使用本地服务器：<br>“&#96;bash</p>
+<h1 id="使用Python"><a href="#使用Python" class="headerlink" title="使用Python"></a>使用Python</h1><p>python -m http.server 8000</p>
+<h1 id="使用Node-js"><a href="#使用Node-js" class="headerlink" title="使用Node.js"></a>使用Node.js</h1><p>npx serve .</p>
+<h1 id="使用PHP"><a href="#使用PHP" class="headerlink" title="使用PHP"></a>使用PHP</h1><p>php -S localhost:8000<br>“&#96;</p>
+<h3 id="3-访问网站"><a href="#3-访问网站" class="headerlink" title="3. 访问网站"></a>3. 访问网站</h3><p>在浏览器中访问 <code>http://localhost:8000</code></p>
+<h2 id="⚙️-自定义配置"><a href="#⚙️-自定义配置" class="headerlink" title="⚙️ 自定义配置"></a>⚙️ 自定义配置</h2><h3 id="修改网站标题"><a href="#修改网站标题" class="headerlink" title="修改网站标题"></a>修改网站标题</h3><p>在 <code>index.html</code> 中修改：<br>“<code>html 发现精彩，连接世界 “</code></p>
+<h3 id="添加新的网站链接"><a href="#添加新的网站链接" class="headerlink" title="添加新的网站链接"></a>添加新的网站链接</h3><p>在对应分类的 <code>links-grid</code> 中添加：<br>“&#96;html</p>
+<p>📱<br>    网站名称</p>
+<p>“&#96;</p>
+<h3 id="修改配色方案"><a href="#修改配色方案" class="headerlink" title="修改配色方案"></a>修改配色方案</h3><p>在 <code>style.css</code> 中调整紫色相关的CSS变量：<br>“<code>css /* 主要紫色 */ color: #c084fc; background: linear-gradient(135deg, #c084fc, #a855f7); /* 悬停效果 */ background: rgba(196, 181, 253, 0.15); border-color: rgba(196, 181, 253, 0.4); “</code></p>
+<h3 id="自定义广告内容"><a href="#自定义广告内容" class="headerlink" title="自定义广告内容"></a>自定义广告内容</h3><p>在 <code>index.html</code> 中的广告区域修改：<br>“<code>html “</code></p>
+<h2 id="🎨-技术栈"><a href="#🎨-技术栈" class="headerlink" title="🎨 技术栈"></a>🎨 技术栈</h2><p>– <strong>HTML5</strong>：语义化标记<br>– <strong>CSS3</strong>：现代CSS特性（Grid、Flexbox、动画、滤镜）<br>– <strong>JavaScript (ES6+)</strong>：交互功能和动画控制<br>– <strong>Google Fonts API</strong>：自动获取网站图标</p>
+<h2 id="📱-响应式设计"><a href="#📱-响应式设计" class="headerlink" title="📱 响应式设计"></a>📱 响应式设计</h2><p>– <strong>桌面端</strong>：&gt; 768px，多列网格布局<br>– <strong>平板端</strong>：768px – 480px，自适应列数<br>– <strong>手机端</strong>：&lt; 480px, 双列布局, 优化触摸体验</p>
+<h2 id="🌟-特色功能详解"><a href="#🌟-特色功能详解" class="headerlink" title="🌟 特色功能详解"></a>🌟 特色功能详解</h2><h3 id="自动图标系统"><a href="#自动图标系统" class="headerlink" title="自动图标系统"></a>自动图标系统</h3><p>使用Google的Favicon服务自动获取网站真实图标：</p>
+<pre><code class="language-html">
+“`
+### 动画性能优化
+– 使用CSS transform和opacity进行动画，避免重排重绘
+– 支持用户的减少动画偏好设置
+– 硬件加速优化，流畅的60fps动画
+### 兼容性处理
+– 支持现代浏览器的深色模式
+– 优雅降级处理
+– 移动端触摸优化
+—
+**感谢使用 KaiGe的导航网！** 🚀
+
+## 🖼️ 资源截图
+&lt;div style=&quot;text-align: center; margin-bottom: 15px;&quot;&gt;&lt;img src=&quot;https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2025/06/202506251349383.jpg&quot; alt=&quot;KaiGe网站导航网源码&quot; title=&quot;KaiGe网站导航网源码&quot; onerror=&quot;this.src=&#39;/images/loading.jpg&#39;&quot; style=&quot;max-width: 80%; height: auto;&quot;&gt;&lt;/div&gt;
+
+## 📥 下载地址
+
+&lt;div class=&quot;download-card&quot;&gt;
+  &lt;a href=&quot;https://77code.lanzoul.com/iFrZ12ziqfif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;download-button&quot;&gt;
+    📥 立即下载
+  &lt;/a&gt;
+  &lt;div class=&quot;download-info&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;文件大小:&lt;/strong&gt; 未知&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;版本:&lt;/strong&gt; 正式版&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;提取码:&lt;/strong&gt; 无&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.download-card &#123;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+&#125;
+.download-button &#123;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+&#125;
+.download-button:hover &#123;
+  background-color: #303f9f;
+&#125;
+.download-info &#123;
+  text-align: center;
+&#125;
+.download-info p &#123;
+  margin: 5px 0;
+  color: #555;
+&#125;
+&lt;/style&gt;
+
+## 💡 提示
+
+- 这是网站源码，需要自行部署。
+- 建议有一定技术基础的用户使用，确保您熟悉网站部署流程。
+- 请确保您的服务器满足源码的系统要求。
+- 如需更多资源，请访问原始网站。
+- 截图仅供参考，实际效果可能有所不同。
+</code></pre>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81/" class="category-chain-item">网站源码</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>KaiGe网站导航网源码</div>
+      <div>http://bearxwu.sbs/posts/29989/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>小熊熊</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年6月25日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/39144/" title="《自杀者：豪华版+》中文版">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">《自杀者：豪华版+》中文版</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/58265/" title="导航下载页自适应源码-带后台-附带搭建教程">
+                        <span class="hidden-mobile">导航下载页自适应源码-带后台-附带搭建教程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="#" target="_blank" rel="nofollow noopener"><span>Bearxwu</span></a> <i class="iconfont icon-love"></i> <a href="#" target="_blank" rel="nofollow noopener"><span>小熊熊</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

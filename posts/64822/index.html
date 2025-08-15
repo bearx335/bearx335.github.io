@@ -1,0 +1,775 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/fluid.png">
+  <link rel="icon" href="/images/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="小熊熊">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="📌 资源介绍项目简介：一个精美的粉色二次元风格个人主页，采用现代化的玻璃拟态设计和丰富的动画效果。主要特色：视觉设计：– 玻璃拟态效果：采用 backdrop-filter 和半透明背景实现现代化的毛玻璃效果– 粉色主题：温柔的粉色渐变配色方案，营造甜美的二次元氛围– 初音未来背景：高清的 VOCALOID 初音未来壁纸作为页面背景– 响应式布局：完美适配桌面端和移动端设备动画效果：– 樱花飘落">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KaiGe粉色二次元个人主页源码">
+<meta property="og:url" content="http://bearxwu.sbs/posts/64822/index.html">
+<meta property="og:site_name" content="熊小屋">
+<meta property="og:description" content="📌 资源介绍项目简介：一个精美的粉色二次元风格个人主页，采用现代化的玻璃拟态设计和丰富的动画效果。主要特色：视觉设计：– 玻璃拟态效果：采用 backdrop-filter 和半透明背景实现现代化的毛玻璃效果– 粉色主题：温柔的粉色渐变配色方案，营造甜美的二次元氛围– 初音未来背景：高清的 VOCALOID 初音未来壁纸作为页面背景– 响应式布局：完美适配桌面端和移动端设备动画效果：– 樱花飘落">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2025/06/202506011854051.jpg">
+<meta property="article:published_time" content="2025-05-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-14T12:32:37.259Z">
+<meta property="article:author" content="小熊熊">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2025/06/202506011854051.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>KaiGe粉色二次元个人主页源码 - 熊小屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"bearxwu.sbs","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"复制"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""],"images_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2,"loading_images":"/images/loading.gif"},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"5a7b1cfef26dd75ee0079afe2ddb9465","google":{"measurement_id":"G-GV73HGP3LE"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5a7b1cfef26dd75ee0079afe2ddb9465";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-GV73HGP3LE", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-GV73HGP3LE');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>熊小屋 bearxwu</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="KaiGe粉色二次元个人主页源码"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-06-01 00:00" pubdate>
+          2025年6月1日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">KaiGe粉色二次元个人主页源码</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="📌-资源介绍"><a href="#📌-资源介绍" class="headerlink" title="📌 资源介绍"></a>📌 资源介绍</h2><p>项目简介：<br>一个精美的粉色二次元风格个人主页，采用现代化的玻璃拟态设计和丰富的动画效果。<br>主要特色：<br>视觉设计：<br>– 玻璃拟态效果：采用 backdrop-filter 和半透明背景实现现代化的毛玻璃效果<br>– 粉色主题：温柔的粉色渐变配色方案，营造甜美的二次元氛围<br>– 初音未来背景：高清的 VOCALOID 初音未来壁纸作为页面背景<br>– 响应式布局：完美适配桌面端和移动端设备<br>动画效果：<br>– 樱花飘落：持续的樱花花瓣飘落动画，增添浪漫氛围<br>– 浮动心形：随机分布的爱心和装饰符号浮动效果<br>– 鼠标跟随：鼠标移动时随机生成粉色粒子特效<br>– 悬停动画：卡片和按钮的悬停渐变和位移效果<br>– 头像光效：头像边缘的流光动画效果<br>功能特性：<br>– QQ集成：自动获取QQ头像，支持多个头像源备用<br>– 固定昵称：显示个性化的用户昵称<br>– 导航菜单：平滑滚动的页面内导航<br>– 社交链接：多个社交平台链接入口<br>– 云服务广告：集成讯度云服务器推广内容<br>文件结构：<br>– index.html                          主页面文件<br>– hatsune_miku_vocaloid_wallpaper.png  初音未来背景图<br>– README.md                           项目说明文档<br>使用方法：<br>前置要求：<br>– 现代化的浏览器（支持 CSS backdrop-filter）<br>– 本地Web服务器（可选，用于避免跨域问题）<br>安装步骤：</p>
+<ol>
+<li>下载所有项目文件到本地目录</li>
+<li>确保文件完整（HTML文件和背景图片）</li>
+<li>直接在浏览器中打开 index.html 文件</li>
+<li>或使用本地服务器运行（推荐）<br>自定义配置：<br>修改个人信息：<br>在 index.html 文件中找到JavaScript部分：<br>– QQ_NUMBER &#x3D; ‘1732418’;          修改为您的QQ号<br>– FIXED_NICKNAME &#x3D; “a’ゞ 梦玄诗”;   修改为您的昵称<br>修改内容：<br>可以修改以下部分的内容：<br>– 关于我部分<br>– 技能展示<br>– 联系方式<br>– 推荐番剧<br>更换背景：<br>替换 hatsune_miku_vocaloid_wallpaper.png 文件，或在CSS中修改背景图片路径<br>调整透明度：<br>在CSS中修改各个卡片的 rgba 数值来调整透明度<br>主要功能：</li>
+<li>QQ信息展示<br>– 自动获取QQ头像，支持多个CDN源<br>– 显示固定的用户昵称<br>– 集成QQ号码展示</li>
+<li>响应式设计<br>– 桌面端：网格布局，多列显示<br>– 移动端：单列布局，优化触摸体验</li>
+<li>动画系统<br>– CSS关键帧动画<br>– JavaScript动态生成粒子效果<br>– 定时器控制的持续动画</li>
+<li>云服务推广<br>– 专门的广告卡片设计<br>– 特殊的视觉效果突出显示<br>– 集成讯度云服务器推广链接<br>设计理念：<br>色彩搭配：<br>– 主色调：粉色系（#ff69b4, #d63384）<br>– 辅助色：白色和半透明效果<br>– 强调色：紫色系（#8e44ad）<br>视觉效果：<br>– 玻璃拟态：现代化的UI设计趋势<br>– 柔和渐变：营造温柔的视觉感受<br>– 动态元素：增加页面活力和趣味性<br>用户体验：<br>– 平滑交互：所有动画都采用缓动函数<br>– 视觉反馈：悬停状态提供即时反馈<br>– 性能优化：合理控制动画数量和复杂度<br>技术特点：<br>CSS技术：<br>– backdrop-filter: blur() – 现代化毛玻璃效果<br>– CSS Grid &amp; Flexbox – 响应式布局<br>– CSS变量 – 便于主题定制<br>– 关键帧动画 – 流畅的视觉效果<br>JavaScript功能：<br>– DOM操作 – 动态内容生成<br>– 事件监听 – 交互效果实现<br>– 定时器 – 动画循环控制<br>– 错误处理 – 头像加载备用方案<br>性能优化：<br>– 图片懒加载概念<br>– 动画元素自动清理<br>– 事件节流控制<br>– 内存泄漏防护<br>浏览器兼容性：<br>完全支持：<br>– Chrome 76+<br>– Firefox 103+<br>– Safari 14+<br>– Edge 79+<br>部分支持：<br>– 较旧版本浏览器可能不支持 backdrop-filter 效果<br>– 降级为普通背景色显示<br>常见问题：<br>Q: 头像不显示怎么办？<br>A: 检查网络连接，代码中已包含多个备用头像源。<br>Q: 动画效果卡顿？<br>A: 可以减少樱花数量或关闭部分动画效果。<br>Q: 如何修改广告内容？<br>A: 在HTML中找到 .ad-card 部分进行修改。<br>Q: 能否添加更多页面？<br>A: 当前为单页面设计，可以添加更多section或创建多页面结构。<br>开源协议：<br>本项目采用 MIT 协议开源，您可以自由使用、修改和分发。<br>致谢：<br>– 初音未来壁纸来源于网络<br>– QQ头像API由腾讯官方提供<br>– 讯度云提供云服务器支持<br>项目作者：KAI GE</li>
+</ol>
+<h2 id="🖼️-资源截图"><a href="#🖼️-资源截图" class="headerlink" title="🖼️ 资源截图"></a>🖼️ 资源截图</h2><div style="text-align: center; margin-bottom: 15px;"><img src="https://images.weserv.nl/?url=https://www.xmy7.com/wp-content/uploads/2025/06/202506011854051.jpg" srcset="/img/loading.gif" lazyload alt="KaiGe粉色二次元个人主页源码" title="KaiGe粉色二次元个人主页源码" onerror="this.src='/images/loading.jpg'" style="max-width: 80%; height: auto;"></div>
+
+<h2 id="📥-下载地址"><a href="#📥-下载地址" class="headerlink" title="📥 下载地址"></a>📥 下载地址</h2><div class="download-card">
+  <a href="https://77code.lanzoul.com/is0hQ2xrqx2j" target="_blank" rel="noopener noreferrer" class="download-button">
+    📥 立即下载
+  </a>
+  <div class="download-info">
+    <p><strong>文件大小:</strong> 未知</p>
+    <p><strong>版本:</strong> 正式版</p>
+    <p><strong>提取码:</strong> 无</p>
+  </div>
+</div>
+
+<style>
+.download-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+.download-button:hover {
+  background-color: #303f9f;
+}
+.download-info {
+  text-align: center;
+}
+.download-info p {
+  margin: 5px 0;
+  color: #555;
+}
+</style>
+
+<h2 id="💡-提示"><a href="#💡-提示" class="headerlink" title="💡 提示"></a>💡 提示</h2><ul>
+<li>这是网站源码，需要自行部署。</li>
+<li>建议有一定技术基础的用户使用，确保您熟悉网站部署流程。</li>
+<li>请确保您的服务器满足源码的系统要求。</li>
+<li>如需更多资源，请访问原始网站。</li>
+<li>截图仅供参考，实际效果可能有所不同。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81/" class="category-chain-item">网站源码</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>KaiGe粉色二次元个人主页源码</div>
+      <div>http://bearxwu.sbs/posts/64822/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>小熊熊</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年6月1日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/38505/" title="《灾厄堡垒》v1.0.3.2.267正式版">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">《灾厄堡垒》v1.0.3.2.267正式版</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/61788/" title="聚绘阁app下载页源码 二次元样式">
+                        <span class="hidden-mobile">聚绘阁app下载页源码 二次元样式</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="#" target="_blank" rel="nofollow noopener"><span>Bearxwu</span></a> <i class="iconfont icon-love"></i> <a href="#" target="_blank" rel="nofollow noopener"><span>小熊熊</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
